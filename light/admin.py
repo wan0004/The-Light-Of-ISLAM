@@ -9,7 +9,7 @@ class ParticipantAdmin(ImportExportModelAdmin, admin.ModelAdmin):
         (
             'Participants', {
                 'fields':[
-                    'name', 'sex', 'dob', 'address', 'aadhar_no', 'phone_no', 
+                    'name', 'father_name', 'sex', 'dob', 'address', 'aadhar_no', 'phone_no', 
                 ]     
             }
         ),

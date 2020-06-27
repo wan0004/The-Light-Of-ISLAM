@@ -7,10 +7,11 @@ class Participant(models.Model):
     ]
 
     name = models.CharField(max_length=100)
+    father_name = models.CharField(max_length=100)
     sex = models.CharField(choices=sex_choice, max_length=10)
     address = models.CharField(max_length=200)
     dob = models.DateField()
-    aadhar_no = models.IntegerField()
+    aadhar_no = models.IntegerField(blank=True, null=True)
     phone_no = models.IntegerField(blank=True, null=True)
 
 
